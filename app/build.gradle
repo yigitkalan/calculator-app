@@ -1,11 +1,15 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android-extensions'
 }
 
 android {
     compileSdk 32
 
+    buildFeatures {
+        viewBinding true
+    }
     defaultConfig {
         applicationId "com.example.calculator"
         minSdk 26
